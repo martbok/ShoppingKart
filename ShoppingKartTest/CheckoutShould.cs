@@ -16,7 +16,8 @@ namespace ShoppingKartTest
         [TestCase("D", 1.5)]
         [TestCase("AAA", 13)]
         [TestCase("BB", 4.5)]
-        [TestCase("ABABACADB", 29)]
+        [TestCase("AAB", 11)]
+        [TestCase("ABABACADB", 28.5)]
         public void CalculateTheTotalPrice(string shopping, decimal expectedPrice)
         {
             // Arrange 

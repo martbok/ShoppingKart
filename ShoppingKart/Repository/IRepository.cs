@@ -1,7 +1,10 @@
-﻿namespace ShoppingKart.Repository
+﻿using System.Collections.Generic;
+
+namespace ShoppingKart.Repository
 {
     public interface IRepository
     {
-        public StockItem GetItem(string sku);
+        public Dictionary<string, StockItem> GetItems();
+        public Discount GetDiscount();
     }
 }
